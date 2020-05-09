@@ -1,0 +1,11 @@
+.overview {
+  padding: 0 5%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}

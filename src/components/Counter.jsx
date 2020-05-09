@@ -1,11 +1,10 @@
 import React from 'react';
+import '../assets/styles/componets/Counter.css';
 
 const Counter = ({ children }) => (
-  <section className='countersContainer'>
-    <div className='container_background-facebook'>
-      { children }
-    </div>
-  </section>
+  <div className='countersContainer'>
+    { children }
+  </div>
 );
 
 export default Counter;
