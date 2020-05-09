@@ -1,14 +1,13 @@
 import React from 'react';
 import '../assets/styles/componets/CountersCard.css';
-import fblogo from '../assets/static/icon-facebook.svg';
 
 
-const CountersCard = ({ smBackground, title, counter, percentage }) => (
+const CountersCard = ({ smBackground, title, smIcon, counter, percentage }) => (
 
   <div className={smBackground}>
     <div className='countersContainer_card'>
       <p>
-        <img src={fblogo} alt='facebook' />
+        <img src={smIcon} alt='facebook' />
         @
         {title}
       </p>

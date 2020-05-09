@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  .overview {
+  .container_card {
     grid-template-columns: 1fr 1fr;
   }
 

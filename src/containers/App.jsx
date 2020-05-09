@@ -5,30 +5,33 @@ import CountersCard from '../components/CountersCard';
 import Overview from '../components/Overview';
 import OverviewCard from '../components/OverviewCard';
 import '../assets/styles/App.css';
+import fbLogo from '../assets/static/icon-facebook.svg';
+import twLogo from '../assets/static/icon-twitter.svg';
+import inLogo from '../assets/static/icon-instagram.svg';
+import ytLogo from '../assets/static/icon-youtube.svg';
+import Toggle from '../components/Toggle';
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <Header>
+        <Toggle />
+      </Header>
       <Counter>
-        <CountersCard smBackground='container_background-facebook' title='nathanf' counter='1987' percentage='12' />
-        <CountersCard smBackground='container_background-twitter' title='nathanf' counter='1044' percentage='99' />
-        <CountersCard smBackground='container_background-instagram' title='realnathanf' counter='11k' percentage='1099' />
-        <CountersCard smBackground='container_background-youtube' title='Nathan F.' counter='8239' percentage='144 Today' />
-        <CountersCard smBackground='container_background-facebook' title='nathanf' counter='1987' percentage='12' />
-        <CountersCard smBackground='container_background-twitter' title='nathanf' counter='1044' percentage='99' />
-        <CountersCard smBackground='container_background-instagram' title='realnathanf' counter='11k' percentage='1099' />
-        <CountersCard smBackground='container_background-youtube' title='Nathan F.' counter='8239' percentage='144 Today' />
+        <CountersCard smBackground='bg-facebook' title='nathanf' smIcon={fbLogo} counter='1987' percentage='12' />
+        <CountersCard smBackground='bg-twitter' title='nathanf' smIcon={twLogo} counter='1044' percentage='99' />
+        <CountersCard smBackground='bg-instagram' title='realnathanf' smIcon={inLogo} counter='11k' percentage='1099' />
+        <CountersCard smBackground='bg-youtube' title='Nathan F.' smIcon={ytLogo} counter='8239' percentage='144 Today' />
       </Counter>
       <Overview title='OverView - Today'>
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
-        <OverviewCard title='Pages Views' counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={fbLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={fbLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={inLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={inLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={twLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={twLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={ytLogo} counter='87' percentage='3%' />
+        <OverviewCard title='Pages Views' smIcon={ytLogo} counter='87' percentage='3%' />
       </Overview>
     </div>
   );
