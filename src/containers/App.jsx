@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Toggle from '../components/Toggle';
 import Counter from '../components/Counter';
 import CountersCard from '../components/CountersCard';
 import Overview from '../components/Overview';
@@ -9,7 +10,6 @@ import fbLogo from '../assets/static/icon-facebook.svg';
 import twLogo from '../assets/static/icon-twitter.svg';
 import inLogo from '../assets/static/icon-instagram.svg';
 import ytLogo from '../assets/static/icon-youtube.svg';
-import Toggle from '../components/Toggle';
 
 const App = () => {
   return (

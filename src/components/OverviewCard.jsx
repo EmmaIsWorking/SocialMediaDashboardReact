@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/styles/componets/OverviewCard.css';
 
-import fblogo from '../assets/static/icon-facebook.svg';
 const OverviewCard = ({ title, smIcon, counter, percentage }) => (
 
   <div className='overview_card'>

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/styles/componets/CountersCard.css';
 
-
 const CountersCard = ({ smBackground, title, smIcon, counter, percentage }) => (
 
   <div className={smBackground}>

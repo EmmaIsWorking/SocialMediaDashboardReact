@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import '../assets/styles/componets/Header.css'
 
 const Header = ({ children }) => (
