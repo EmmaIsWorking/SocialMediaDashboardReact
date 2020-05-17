@@ -21,8 +21,8 @@ export const OverviewCardStyles = createGlobalStyle `
 }
 
 .overview_card .overview_card-iconSocialMedia {
-  position: relative;
-  left: 77px;
+  margin-left:auto;
+
 }
 
 .overview_card .overview_card-view {
@@ -30,17 +30,17 @@ export const OverviewCardStyles = createGlobalStyle `
 }
 
 .overview_card .overview_card-percentageUp {
-  text-align: end;
-  position: relative;
+  width:26px;
   top: 7px;
+  margin-left:auto;
   font-size: 12px;
   color: #1db489;
 }
 
 .overview_card .overview_card-percentageDown {
-  text-align: end;
-  position: relative;
+  width:26px;
   top: 7px;
+  margin-left:auto;
   font-size: 12px;
   color: #dc414c;
 }

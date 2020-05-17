@@ -1,7 +1,7 @@
 import React from 'react';
 import { CounterCardStyles } from './styles';
 
-const CountersCard = ({ smBackground, title, smIcon, counter, percentage }) => (
+const CountersCard = ({ smBackground, title, smIcon, counter, iconClassPct, iconPct, percentage }) => (
   <>
     <CounterCardStyles />
     <div className={smBackground}>
@@ -15,8 +15,9 @@ const CountersCard = ({ smBackground, title, smIcon, counter, percentage }) => (
           <p>{counter}</p>
           <h3>Followers</h3>
         </div>
-        <p className='countersContainer_card-today'>
-          <img src='images/icon-up.svg' alt='up' />
+        {/* <p className='countersContainer_card-today'> */}
+        <p className={iconClassPct}>
+          <img src={iconPct} alt='icon' />
           { percentage }
           {' '}
           Today

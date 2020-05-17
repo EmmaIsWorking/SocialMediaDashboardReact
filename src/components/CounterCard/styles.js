@@ -60,4 +60,7 @@ export const CounterCardStyles = createGlobalStyle `
 .countersContainer_card-today {
   color: #1db489 !important;
 }
+.countersContainer_card-today-down {
+  color: #dc414c !important;
+}
 `
