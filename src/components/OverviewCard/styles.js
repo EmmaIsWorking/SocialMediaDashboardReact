@@ -13,7 +13,7 @@ export const OverviewCardStyles = createGlobalStyle `
   padding: 10px 30px;
   min-width: 210px;
   min-height: 100px;
-  background-color: var(--color-card);
+  background-color: ${({ theme }) => theme.color_card};
 }
 
 .overview_card p {

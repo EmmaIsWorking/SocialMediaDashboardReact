@@ -1,9 +1,11 @@
 import React from 'react';
 import { OverviewCardStyles } from './styles';
+import { MediaStyles } from '../../containers/media';
 
 const OverviewCard = ({ title, smIcon, counter, percentage }) => (
 
   <>
+    <MediaStyles />
     <OverviewCardStyles />
     <div className='overview_card'>
       <p>{title}</p>

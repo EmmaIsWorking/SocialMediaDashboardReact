@@ -1,9 +1,11 @@
 import React from 'react';
 import Toggle from '../Toggle/Toggle';
 import { HeaderStyles } from './styles';
+import { MediaStyles } from '../../containers/media';
 
 const Header = ({ theme, setTheme }) => (
   <>
+    <MediaStyles />
     <HeaderStyles />
     <nav>
       <div className='container_socialMedia'>

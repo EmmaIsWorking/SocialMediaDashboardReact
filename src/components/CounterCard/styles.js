@@ -25,7 +25,7 @@ export const CounterCardStyles = createGlobalStyle `
   border-radius: 10px;
 }
 .countersContainer_card {
-  background-color: var(--color-card);
+  background-color: ${({ theme }) => theme.color_card};
   align-content: center;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ export const CounterCardStyles = createGlobalStyle `
 .countersContainer_card p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: var(--paragraph);
+  color: ${({ theme }) => theme.paragraph};
   font-size: 12px;
   display: flex;
   align-items: center;

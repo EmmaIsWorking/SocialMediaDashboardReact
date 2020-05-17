@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 import Header from '../components/Header/Header';
 import { GlobalStyles } from './styles';
-// import { MediaStyles } from './media';
+import { lightColors, darkColors } from './variablesThemes';
+import { MediaStyles } from './media';
 import Counter from '../components/Counter/Counter';
 import CountersCard from '../components/CounterCard/CountersCard';
 import Overview from '../components/Overview/Overview';
@@ -19,7 +21,8 @@ const App = () => {
   };
 
   return (
-    <>
+    <ThemeProvider theme={theme ? lightColors : darkColors}>
+      <MediaStyles />
       <GlobalStyles />
         <div>
           <Header theme={theme} setTheme={changeTheme} />
@@ -40,7 +43,7 @@ const App = () => {
             <OverviewCard title='Pages Views' smIcon={ytLogo} counter='87' percentage='3%' />
           </Overview>
       </div>
-    </>
+    </ThemeProvider>
   );
 };
 
